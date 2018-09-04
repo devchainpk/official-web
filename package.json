@@ -1,0 +1,65 @@
+{
+  "name": "react-landing-pages",
+  "version": "0.0.1",
+  "description": "A collection of landing pages for react.js",
+  "main": "./src/entry.js",
+  "homepage": "http://github.com/davidlygagnon/react-landing-pages",
+  "author": "David Ly-Gagnon",
+  "license": "MIT",
+  "scripts": {
+    "watch": "webpack --watch --config ./webpack.config.js --progress --colors",
+    "dev": "webpack --config ./webpack.config.js --progress --colors && serve public -p 9000",
+    "dev:watch": "npm run watch & serve public -p 9000",
+    "postinstall": "webpack --config ./webpack-prod.config.js --progress --colors",
+    "start": "node ./src/server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidlygagnon/react-landing-pages"
+  },
+  "keywords": [
+    "react.js, landing-page, bootstrap project"
+  ],
+  "dependencies": {
+    "bootstrap-grid": "^3.0.1",
+    "express": "^4.13.1",
+    "history": "^1.17.0",
+    "jquery": "^2.2.1",
+    "react": "^0.14.1",
+    "react-dom": "^0.14.7",
+    "react-fullpage": "^0.1.18",
+    "react-router": "^1.0.3",
+    "react-slick": "^0.15.4",
+    "slick-carousel": "^1.8.1",
+    "webfontloader": "^1.6.21"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "classnames": "^2.1.3",
+    "css-loader": "^0.28.5",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.8.4",
+    "image-webpack-loader": "^3.3.1",
+    "node-env-file": "^0.1.8",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.18.4",
+    "path": "^0.11.14",
+    "react-hot-loader": "^1.2.8",
+    "resolve-url-loader": "^2.1.0",
+    "sass-loader": "^6.0.6",
+    "serve": "^10.0.0",
+    "sizzle": "^2.3.0",
+    "string-replace-loader": "^1.0.0",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  }
+}

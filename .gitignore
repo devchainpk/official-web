@@ -1,0 +1,8 @@
+node_modules/
+public
+public/vendors.js
+public/vendors.js.map
+public/bundle.js
+public/bundle.js.map
+.env
+npm-debug.log
